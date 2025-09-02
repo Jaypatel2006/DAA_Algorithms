@@ -53,10 +53,19 @@ void mergesort(vector<int> &vec,int st,int en){
 }
 
 int main(){
-    vector<int> vec={2,4,1,3,5};
+    int n;
+    
+    cout<<"Enter The size of Array : ";
+    cin>>n;
+    vector<int> vec(n,0);
+    cout<<"Enter The Elements ";
+    for(int i=0;i<n;i++){
+        cin>>vec[i];
+    }
     int st = 0;
     int en = vec.size()-1;
     mergesort(vec,st,en);
+    cout<<"The Number of Inersions = ";
     cout<<invcount<<endl;
     return 0;
 }
