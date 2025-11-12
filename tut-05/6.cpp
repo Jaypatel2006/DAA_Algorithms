@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<double> p={0.2,0.5,0.3};
+    vector<double> p={0.4,0.9,0.1};
     int n=p.size();
     vector<vector<double>> cost(n,vector<double>(n,0)),sum(n,vector<double>(n,0));
     for(int i=0;i<n;i++) cost[i][i]=sum[i][i]=p[i];
